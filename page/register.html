@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet/less" href="../css/index.less">
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-static-top regist-head">
+        <div class="container">
+            <a href="#" onclick="javascript:return_prepage();"><i class="glyphicon glyphicon-chevron-left"></i></a>
+            用户注册
+        </div>
+    </nav>
+    <div class="container">
+        <div class="center" id="register" style="background-color: #fff;">
+            <div class="form-group">
+                <i for="name" class="glyphicon glyphicon-user"></i>
+                <input type="text" class="form-control" id="name" placeholder="真实姓名"
+                        data-require="true"
+                        data-regex="[^\u0000-\u00FF]"
+                        data-regex-msg="姓名必须是中文">
+            </div>
+            <div class="form-group">
+                <i for="phone" class="glyphicon glyphicon-earphone"></i>
+                <input type="text" class="form-control" id="phone" placeholder="请输入手机号"
+                        data-require="true"
+                        data-regex="^1\d{10}$"
+                        data-regex-msg="手机号码必须是11位整数">
+            </div>
+            <div class="input-group">
+                <input type="text" class="form-control" data-require="true" placeholder="短信验证码" aria-describedby="basic-addon2">
+                <span class="input-group-addon" id="basic-addon2">获取验证码</span>
+            </div>
+            <div class="form-group">
+                <i for="password" class="glyphicon glyphicon-lock"></i>
+                <input type="text" class="form-control" data-require="true" id="password" placeholder="邀请码">
+            </div>
+            <p>该手机号将作为你的登录账号</p>
+            <button type="button" class="btn btn-primary">确定</button>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="" checked class="deal">
+                &nbsp;&nbsp;我已同意 注册协议
+            </label>
+        </div>
+    </div>
+    <script src="../js/less.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/regValid.js"></script>
+</body>
+</html>

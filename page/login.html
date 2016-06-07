@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet/less" href="../css/index.less">
+</head>
+<body>
+    <div class="container">
+        <img src="../images/login_logo.png" class="login-logo">
+        <div class="center">
+            <div class="form-group">
+                <i for="phone" class="glyphicon glyphicon-earphone"></i>
+                <input type="text" class="form-control" id="phone" value="" placeholder="请输入手机号">
+            </div>
+            <div class="form-group">
+                <i for="password" class="glyphicon glyphicon-lock"></i>
+                <input type="password" class="form-control" id="password" placeholder="请输入密码">
+            </div>
+            <div class="row login-pass">
+                <div class="col-md-6 pull-left"><a href="#">忘记密码</a></div>
+                <div class="col-md-6 pull-right"><a href="register.html">用户注册</a></div>
+            </div>
+            <div class="login-check">
+                <img src="../images/check.png" width="24" height="24">
+                <img src="../images/nocheck.png" style="display: none" width="24" height="24">
+                <span>承保区域是山东境外请取消勾选！</span>
+            </div>
+            <button type="button" class="btn btn-primary">登录</button>
+        </div>
+        <img src="../images/login_bottom.png" class="login-bottom">
+    </div>
+    <script src="../js/less.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+</html>
